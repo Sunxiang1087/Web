@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图书商城首页</title>
+    <!-- 引入外部CSS样式文件 -->
+    <link rel="stylesheet" href="css/lab2-2502-061-index.css">
+</head>
+<body>
+    <!-- 1. 头部区域 Logo+顶部导航 -->
+    <header class="header">
+        <div class="logo">图书商城</div>
+        <!-- 顶部导航菜单 -->
+        <nav class="top-nav">
+            <ul>
+                <li><a href="#">首页</a></li>
+                <li><a href="#">图书分类</a></li>
+                <li><a href="#">新书上架</a></li>
+                <li><a href="#">热门推荐</a></li>
+                <li><a href="#">关于我们</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 主体容器 整体页面居中 -->
+    <div class="container">
+        <!-- 2. 左侧栏：图书分类导航（相对定位） -->
+        <aside class="left-aside">
+            <h3>图书分类</h3>
+            <ul class="cate-list">
+                <li><a href="#">文学小说</a></li>
+                <li><a href="#">编程技术</a></li>
+                <li><a href="#">历史人文</a></li>
+                <li><a href="#">科普读物</a></li>
+                <li><a href="#">经管励志</a></li>
+            </ul>
+        </aside>
+
+        <!-- 3. 中间栏：图书内容展示区 -->
+        <main class="main-content">
+            <!-- 热门推荐：浮动布局排列 -->
+            <div class="hot-book">
+                <h3>🔥 热门推荐</h3>
+                <div class="hot-list">
+                    <!-- 第一本书：父相子绝 + 鼠标悬停显示隐藏效果 -->
+                    <div class="book-item">
+                        <img src="img/book1.jpg" alt="图书封面">
+                        <div class="book-hover-info">
+                            <p>图书简介</p>
+                            <p>点击查看详情</p>
+                        </div>
+                    </div>
+                    <div class="book-item">
+                        <img src="img/book2.jpg" alt="图书封面">
+                    </div>
+                    <div class="book-item">
+                        <img src="img/book3.jpg" alt="图书封面">
+                    </div>
+                </div>
+            </div>
+
+            <!-- 新书上市：Table表格布局 -->
+            <div class="new-book">
+                <h3>📚 新书上市</h3>
+                <table>
+                    <tr>
+                        <th>书名</th>
+                        <th>作者</th>
+                        <th>分类</th>
+                        <th>价格</th>
+                    </tr>
+                    <tr>
+                        <td>HTML5从入门到精通</td>
+                        <td>前端教学组</td>
+                        <td>编程技术</td>
+                        <td>59.9元</td>
+                    </tr>
+                    <tr>
+                        <td>CSS3权威指南</td>
+                        <td>Web开发组</td>
+                        <td>编程技术</td>
+                        <td>69.9元</td>
+                    </tr>
+                    <tr>
+                        <td>百年孤独</td>
+                        <td>马尔克斯</td>
+                        <td>文学小说</td>
+                        <td>39.5元</td>
+                    </tr>
+                </table>
+            </div>
+        </main>
+
+        <!-- 4. 右侧栏：促销广告（固定定位 fixed） -->
+        <aside class="right-aside">
+            <h3>限时促销</h3>
+            <p>全场图书满100减20</p>
+            <p>新人首单免运费</p>
+            <div class="ad-box">
+                <img src="img/ad.jpg" alt="促销广告">
+            </div>
+        </aside>
+    </div>
+</body>
+</html>
